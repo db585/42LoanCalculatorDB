@@ -8,7 +8,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     integrity="sha256-OweaP/Ic6rsV+lysfyS4h+LM6sRwuO3euTYfr6M124g=" crossorigin="anonymous" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Loan Calculator</title>
 </head>
@@ -21,7 +23,29 @@
         <div class="col s12 m6 offset-m3">
           <div class="card center-align white">
             <div class="card-title">
-              <h3 class="section"> <strong>Loan Calculator</strong> </h3>
+              <h3 id="db-card-title"> <strong>Loan Calculator</strong> </h3>
+              <div class="row">
+                <form id="db-loan-form col m11 s12">
+                  <div class="input-field col m11 s12">
+                    <i class="material-icons prefix orange-text text-darken-4">attach_money</i>
+                    <input id="loan-amount" type="text" class="validate">
+                    <label for="loan-amount">Loan Amount</label>
+                  </div>
+
+                  <div class="input-field col m11 s12">
+                    <i class="prefix">
+                      <svg style="width:36px;height:36px" viewbox="0 0 24 24">
+                        <path fill="#e65100" d="M18.5,3.5L3.5,18.5L5.5,20.5L20.5,5.5M7,4A3,3 0 0,0 4,7A3,3 0 0,0 7,10A3,3 0 0,0 10,7A3,3 0 0,0 7,4M17,14A3,3 0 0,0 14,17A3,3 0 0,0 17,20A3,3 0 0,0 20,17A3,3 0 0,0 17,14Z" />
+                      </svg>
+                    </i>
+                    <input id="loan-percent" type="text" class="validate">
+                    <label for="loan-percent">Loan Percent</label>
+                  </div>
+                </form>
+              </div>
+              <hr>
+
+
             </div>
           </div>
           <!-- <h1 class="center">Hello world</h1> -->
