@@ -20,37 +20,86 @@
   <div class="section">
     <div class="container">
       <div class="row">
-        <div class="col s12 m6 offset-m3">
+        <div class="col s12 m8 offset-m2 l6 offset-l3 ">
           <div class="card center-align white">
             <div class="card-title">
               <h3 id="db-card-title"> <strong>Loan Calculator</strong> </h3>
               <div class="row">
                 <form id="db-loan-form col m11 s12">
-                  <div class="input-field col m11 s12">
-                    <i class="material-icons prefix orange-text text-darken-4">attach_money</i>
-                    <input id="loan-amount" type="text" class="validate">
-                    <label for="loan-amount">Loan Amount</label>
+                  <div class="input-field col m10 s11">
+                    <!-- <i class="material-icons prefix orange-text text-darken-4">attach_money</i> -->
+                    <i class="prefix">
+                      <svg style="width:100%;height:100%" viewbox="0 0 24 24">
+                        <path fill="#e65100" d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z" />
+                      </svg>
+                    </i>
+                    <input id="db-loan-amount" type="number" class="validate">
+                    <label for="db-loan-amount">Loan Amount</label>
                   </div>
 
-                  <div class="input-field col m11 s12">
+                  <div class="input-field col m10 s11">
                     <i class="prefix">
                       <svg style="width:36px;height:36px" viewbox="0 0 24 24">
                         <path fill="#e65100" d="M18.5,3.5L3.5,18.5L5.5,20.5L20.5,5.5M7,4A3,3 0 0,0 4,7A3,3 0 0,0 7,10A3,3 0 0,0 10,7A3,3 0 0,0 7,4M17,14A3,3 0 0,0 14,17A3,3 0 0,0 17,20A3,3 0 0,0 20,17A3,3 0 0,0 17,14Z" />
                       </svg>
                     </i>
-                    <input id="loan-percent" type="text" class="validate">
-                    <label for="loan-percent">Loan Percent</label>
+                    <input id="db-interest" type="number" class="validate">
+                    <label for="db-interest">Loan Percent</label>
+                  </div>
+
+                  <div class="input-field col m10 s11">
+                    <input id="db-years" type="number" class="validate">
+                    <label for="db-years">Years To Repay</label>
+                  </div>
+
+                  <div class="input-field col s11 white-text">
+                    <input id="db-submit" type="submit" class="btn waves-effect btn-large white-text orange darken-4"
+                      value="Calculate">
                   </div>
                 </form>
               </div>
-              <hr>
+              <!-- LOADER -->
+              <!-- <div id="loading">
+                <img src="./img/loading.gif" alt="loading">
+              </div> -->
+
+              <!-- RESULTS -->
+              <div class="row">
+                <h4>Results</h4>
+                <div class="col s12">
+                  Montly payment
+                  <div class="input-field inline">
+                    <input id="db-monthly-payment" type="number" disabled value="">
+                  </div>
+                </div>
 
 
+                <div class="row">
+                  <div class="col s12">
+                    Total payment
+                    <div class="input-field inline">
+                      <input id="db-total-payment" type="number" disabled value="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row">
+                  <div class="col s12">
+                    Total interest
+                    <div class="input-field inline">
+                      <input id="db-total-interest" type="number" disabled value="">
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- <h1 class="center">Hello world</h1> -->
             </div>
-          </div>
-          <!-- <h1 class="center">Hello world</h1> -->
-        </div>
 
+          </div>
+        </div>
       </div>
     </div>
   </div>

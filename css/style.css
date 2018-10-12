@@ -1,13 +1,30 @@
 #db-card-title {
   padding-top: 0.6em;
   /* margin-bottom: 0.1em; */
+  color: #dd2c00;
 }
 
 .input-field {
   margin-top: 0.1em;
 }
 
-.material-icons {
-  height: 36px;
-  width: 36px;
+.input-field {
+  margin-left: 0.7em !important;
+}
+
+.btn-large{
+  /* display: inline-block; */
+  width: 100% !important;
+  height: 100% !important;
+  /* font-weight: 900; */
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
+  
+}
+
+#db-submit {
+  width: 100% !important;
+  color: whitesmoke;
+
 }
