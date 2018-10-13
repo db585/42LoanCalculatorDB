@@ -13,7 +13,6 @@
 }
 
 .btn-large{
-  /* display: inline-block; */
   width: 100% !important;
   height: 100% !important;
   /* font-weight: 900; */
@@ -26,5 +25,11 @@
 #db-submit {
   width: 100% !important;
   color: whitesmoke;
+  /* border: none !important; */
 
+}
+
+#db-loading,
+#db-results {
+  display: none
 }
